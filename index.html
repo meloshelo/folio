@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raajveer Yuv - Portfolio</title>
+  <title>Nandini - Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -14,80 +14,71 @@
       filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
     }
 
-    /* Fade-up animation */
     @keyframes fadeUp {
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
-    .fade-up {
-      animation: fadeUp 1s ease forwards;
-    }
+    .fade-up { animation: fadeUp 1s ease forwards; }
 
-    /* Slow floating effect for illustration */
     @keyframes float {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-10px); }
     }
-    .float {
-      animation: float 4s ease-in-out infinite;
-    }
-
-    /* Staggered grid items */
-    .grid-animate > div {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 1s ease forwards;
-    }
-    .grid-animate > div:nth-child(1) { animation-delay: 0.2s; }
-    .grid-animate > div:nth-child(2) { animation-delay: 0.4s; }
-    .grid-animate > div:nth-child(3) { animation-delay: 0.6s; }
-    .grid-animate > div:nth-child(4) { animation-delay: 0.8s; }
+    .float { animation: float 4s ease-in-out infinite; }
   </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between">
 
   <!-- Header -->
   <header class="flex justify-between items-center px-10 py-6 text-sm text-gray-600 opacity-0 animate-[fadeUp_1s_ease_forwards]">
-    <span class="tracking-wide">Open for collaborations</span>
+    <a href="mailto:rajveer@gmail.com" class="tracking-wide hover:text-gray-900 transition">
+      Open for collaborations
+    </a>
     <span class="uppercase font-semibold tracking-wider">Portfolio</span>
   </header>
 
   <!-- Hero Section -->
   <section class="flex flex-col items-center justify-center text-center py-20 px-6">
     <h1 class="text-6xl md:text-7xl font-extrabold text-gray-900 tracking-tight fade-up">
-      Raajveer Yuv
+      Nandini
     </h1>
     <p class="mt-3 text-lg text-gray-500 uppercase tracking-widest fade-up" style="animation-delay:0.3s">
       UX/UI Designer · Independent
     </p>
     <div class="studio-illustration mt-10 w-72 md:w-96 fade-up" style="animation-delay:0.6s">
-      <img src="ChatGPT Image Sep 28, 2025, 09_16_12 PM.png" alt="Studio Illustration" class="w-full float" />
+      <img src="illustration.png" alt="Studio Illustration" class="w-full float" />
     </div>
   </section>
 
-  <!-- Info Grid -->
-  <section class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center px-10 pb-20 grid-animate">
-    <div class="transition transform hover:-translate-y-2 hover:text-gray-900">
-      <h3 class="text-lg font-medium">01</h3>
-      <p class="text-gray-600 mt-1">Works</p>
+  <!-- Anecdote Section (3-column) -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center px-10 pb-20 text-center md:text-left">
+    <!-- Left Anecdote -->
+    <div class="fade-up">
+      <p class="uppercase text-sm tracking-widest text-gray-500 mb-2">About Me</p>
+      <p class="text-gray-800 font-medium leading-relaxed">
+        Nandini is an independent UX/UI designer based in India.<br>
+        Passionate about minimalism and storytelling through design.
+      </p>
     </div>
-    <div class="transition transform hover:-translate-y-2 hover:text-gray-900">
-      <h3 class="text-lg font-medium">02</h3>
-      <p class="text-gray-600 mt-1">Expertise</p>
+
+    <!-- Illustration in center -->
+    <div class="flex justify-center " style="animation-delay:0.4s">
+      <img src="D:\awwards\ecom-design\ChatGPT Image Sep 28, 2025, 09_16_12 PM.png" class="w-60 md:w-72 " />
     </div>
-    <div class="transition transform hover:-translate-y-2 hover:text-gray-900">
-      <h3 class="text-lg font-medium">03</h3>
-      <p class="text-gray-600 mt-1">Playground</p>
-    </div>
-    <div class="transition transform hover:-translate-y-2 hover:text-gray-900">
-      <h3 class="text-lg font-medium">04</h3>
-      <p class="text-gray-600 mt-1">Contact</p>
+
+    <!-- Right Anecdote -->
+    <div class="fade-up" style="animation-delay:0.6s">
+      <p class="uppercase text-sm tracking-widest text-gray-500 mb-2">Philosophy</p>
+      <p class="text-gray-800 font-medium leading-relaxed">
+        Passionate about creating beautiful and unforgettable digital experiences.<br>
+        Always experimenting at the intersection of design & technology.
+      </p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="text-center py-6 text-sm text-gray-500 opacity-0 animate-[fadeUp_1s_ease_forwards]">
-    <p>© 2025 — Designed with love by Raajveer Yuv</p>
+    <p>© 2025 — Designed with love by Nandini</p>
   </footer>
 
 </body>
